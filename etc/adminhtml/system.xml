@@ -1,0 +1,43 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/system_file.xsd">
+    <system>
+        <tab id="magecomp" translate="label" sortOrder="100" class="magecomp-logo">
+            <label>
+                <![CDATA[ ]]>
+            </label>
+        </tab>
+        <section id="restrictpaymentbyship" translate="label" sortOrder="10" showInDefault="1" showInWebsite="1"
+                 showInStore="1">
+            <class>separator-top</class>
+            <label>Restrict Payment By Shipping</label>
+            <tab>magecomp</tab>
+            <resource>Magecomp_Restrictpaymentbyship::config</resource>
+            <group id="general" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1"
+                   showInStore="1">
+                <label>Configuration</label>
+                <comment>Note: Extension is to Restrict Payment Methods Based on Selected Shipping Methods.</comment>
+                <field id="enable" translate="label" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Restrict Payment By Shipping</label>
+                    <source_model>Magento\Config\Model\Config\Source\Enabledisable</source_model>
+                </field>
+                <field id="shippingmethod" translate="label" type="multiselect" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Shipping Method</label>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                    <validate>required-entry</validate>
+                    <source_model>Magecomp\Restrictpaymentbyship\Model\Adminhtml\System\Config\Shipingmethod</source_model>
+                </field>
+                <field id="paymentmethod" translate="label" type="multiselect" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1">
+                    <label>Payment Method</label>
+                    <depends>
+                        <field id="enable">1</field>
+                    </depends>
+                    <validate>required-entry</validate>
+                    <source_model>Magecomp\Restrictpaymentbyship\Model\Adminhtml\System\Config\Paymentmethod</source_model>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>
