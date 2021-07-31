@@ -9,6 +9,7 @@
     "license": [
         "Commercial"
     ],
+    "minimum-stability": "dev",
     "authors": [
         {
             "name": "Magecomp",
