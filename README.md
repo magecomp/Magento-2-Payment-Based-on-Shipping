@@ -23,11 +23,17 @@ Admins can restrict Magento 2 payments based on shipping selection by using Mage
 
 ![config](https://magecomp.com/media/catalog/product/cache/19b10369fecc27f1a40729d1b5b60dea/1/_/1.configuration_9.webp)
 
-**2. Restrict Payment Method With Flat Rate Shipping 2
+**2. Restrict Payment Method With Flat Rate Shipping 2**
 
 ![config](https://magecomp.com/media/catalog/product/cache/19b10369fecc27f1a40729d1b5b60dea/2/_/2.restrict_payment_method_with_flat_rate_shipping_2_.webp)
 
-**3. 
+**3. Bank Transfer Payment Option Frontend**
+
+![config](https://magecomp.com/media/catalog/product/cache/525af3b28c011fb51d5e39040f088842/3/_/3.bank_transfer_payment_option_frontend.webp)
+
+**4. Non Restricted Payment Method Frontend 2
+
+![config](https://magecomp.com/media/catalog/product/cache/19b10369fecc27f1a40729d1b5b60dea/4/_/4.non_restricted_payment_method_frontend_2.webp)
 
 ## Support
 
